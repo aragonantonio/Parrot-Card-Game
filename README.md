@@ -1,4 +1,4 @@
-![Demo do jogo](assets/capturaDemo.mp4)
+![Demo do jogo](assets/capturaDemo.gif)
 
 # Game Features: #
 
