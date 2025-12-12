@@ -1,3 +1,5 @@
+![Demo do jogo](assets/CapturaDoApp.gif)
+
 # Game Features: #
 
 * Ask the player how many cards they want to play with;
