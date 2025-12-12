@@ -1,5 +1,8 @@
 # Game Features: #
 
+* Ask the player how many cards they want to play with;
+* Create the game based on the number of cards requested;
+* Shuffle the cards to start the game;
 * Selects the pair of cards to be compared;
 * Identifies matching pairs and keeps the cards flipped;
 * Counts how many moves were needed to finish the game;
