@@ -1,0 +1,180 @@
+/* Reset CSS completo */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    line-height: 1.15; 
+    -webkit-text-size-adjust: 100%; 
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+main {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    border-style: none;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+button, input, select, textarea {
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+iframe, video {
+    display: block;
+    max-width: 100%;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q::before, q::after {
+    content: '';
+    content: none;
+}
+
+/* Inicio do Código */
+body {
+    background-color:#EEF9BF
+}
+
+/* Header */
+.Header {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 200px;
+}
+
+.Title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    color: #75B79E;
+}
+
+/* Body */
+.Body {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.Cards {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;  
+    flex-wrap: wrap;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/*Flipped Card Eduardo Vedooto*/
+.card {
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  width: 120px;
+  height: 150px;
+  position: relative;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  margin-right: 20px;
+  background-color: #A7E9AF;
+  border-radius: 5px;
+}
+
+.face {
+  width: 99%;
+  height: 99%;
+  border-radius: 5px;
+  background-color: #A7E9AF;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: all .5s;
+  transform-style: preserve-3d;
+}
+
+.back-face {
+  transform: rotateY(180deg);
+}
+
+.cardSelected .back-face {
+  transform: rotateY(0deg);
+}
+
+.cardSelected .front-face {
+  transform: rotateY(-180deg);
+}
+
+.permanentlyTurnedCard .back-face {
+  transform: rotateY(0deg);
+}
+
+.permanentlyTurnedCard .front-face {
+  transform: rotateY(-180deg);
+}
+
+/*Responsividade*/
+@media (max-width: 600px) {
+    .Title {
+        font-size: 36px;
+    }
+
+    .Cards {
+        flex-direction: column;
+    }
+
+}
